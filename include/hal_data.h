@@ -387,6 +387,8 @@ typedef struct hal_com_data
 	u8	txpwr_limit_loaded:1;
 	u8	txpwr_limit_from_file:1;
 
+	u8	CurrentTxPwrIdx;
+
 	// For power group
 	/*
 	u8	PwrGroupHT20[RF_PATH_MAX_92C_88E][CHANNEL_MAX_NUMBER];

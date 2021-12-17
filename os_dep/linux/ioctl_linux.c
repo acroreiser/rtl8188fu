@@ -13539,7 +13539,7 @@ static struct iw_statistics *rtw_get_wireless_stats(struct net_device *dev)
 }
 #endif
 
-#ifdef CONFIG_WIRELESS_EXT
+#if defined(CONFIG_WIRELESS_EXT) && !defined(CONFIG_CFG80211_WEXT)
 struct iw_handler_def rtw_handlers_def =
 {
 	.standard = rtw_handlers,

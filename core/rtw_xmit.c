@@ -3804,10 +3804,10 @@ s32 rtw_monitor_xmit_entry(struct sk_buff *skb, struct net_device *ndev)
 	if (unlikely(skb->len < rtap_len))
 		goto fail;
 
-	if (rtap_len != 12) {
+/*	if (rtap_len != 12) {
 		DBG_8192C("radiotap len (should be 14): %d\n", rtap_len);
 		goto fail;
-	}
+	} */
 
 	/* Skip the ratio tap header */
 	skb_pull(skb, rtap_len);

@@ -3455,8 +3455,8 @@ int value;
 
 if(value < 0)
 	value = 0;
-if(value > 40)
-	value = 40;
+if(value > 30)
+	value = 30;
 
 if(type == NL80211_TX_POWER_FIXED) {
 	pHalData->CurrentTxPwrIdx = value;
@@ -3796,11 +3796,11 @@ static int rtw_cfg80211_monitor_if_xmit_entry(struct sk_buff *skb, struct net_de
 	if (unlikely(skb->len < rtap_len))
 		goto fail;
 
-	if(rtap_len != 14)
+/*	if(rtap_len != 14)
 	{
 		DBG_8192C("radiotap len (should be 14): %d\n", rtap_len);
 		goto fail;
-	}	
+	} */	
 
 	/* Skip the ratio tap header */
 	skb_pull(skb, rtap_len);

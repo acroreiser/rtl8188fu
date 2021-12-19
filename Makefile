@@ -60,7 +60,7 @@ CONFIG_80211W = n
 CONFIG_REDUCE_TX_CPU_LOADING = n
 CONFIG_BR_EXT = y
 CONFIG_ANTENNA_DIVERSITY = n
-CONFIG_TDLS = n
+CONFIG_TDLS = y
 CONFIG_WIFI_MONITOR = n
 ######################## Wake On Lan ##########################
 CONFIG_WOWLAN = n
